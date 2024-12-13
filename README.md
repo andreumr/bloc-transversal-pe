@@ -25,15 +25,18 @@ Aquest fitxer compila els codis i els executa per generar una dada amb la comand
 
 ### make
 
-Executar aquesta comanda a la terminal generarà una dada i l'afegirà al fitxer **output.txt**.
-Els programes es compilen autimaticament.
+Executar aquesta comanda a la terminal compilarà els codis i crearà o reescriurà el fitxer **output.txt** amb les capçaleres.
 
+### make executar
+
+Executar aquesta comanda a la terminal generarà una dada i l'afegirà al fitxer **output.txt**.
 Atenció: si s'executa el programa **creador_grafs.cc** varies vegades en intervals de temps molt petits s'acabaran generant els mateixos grafs.
 
 ### make clean
 
-Executant aquesta comanda es borrarant els executables i l'**output.txt**.
+Executant aquesta comanda es borraran els executables i crearà o reescriurà el fitxer **output.txt** amb les capçaleres.
 
 ### output.txt
 
 En aquest fitxer de text es guardaran les dades generades en el següent format: *temps de Kruskal*,*temps de prim*,*nodes*,*arestes*
+Aquest format és llegible per R.
