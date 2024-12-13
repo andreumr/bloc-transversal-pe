@@ -1,4 +1,4 @@
-all: kruskal prim graf executar
+all: clean kruskal prim graf
 
 kruskal: Kruskal.cc
 	g++ -o kruskal Kruskal.cc
@@ -15,5 +15,5 @@ executar: graf kruskal prim
 	./prim < input.txt >> output.txt
 
 clean:
-	rm -f kruskal prim graf input.txt output.txt *.o
+	rm -f kruskal prim graf input.txt *.o
 	echo Kruskal,Prim,nodes,arestes > output.txt
